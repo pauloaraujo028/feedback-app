@@ -10,12 +10,7 @@ generator client {
 
 // Configure sua conexão com SQLite
 // Veja mais sobre como configurar o SQLite em: https://pris.ly/d/sqlite
-// datasource db {
-//   provider = "sqlite"
-//   url      = env("file:./dev.db")
-// }
-
 datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
+  provider = "sqlite"
+  url      = env("file:./dev.db")
 }
